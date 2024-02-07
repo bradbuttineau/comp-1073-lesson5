@@ -5,7 +5,8 @@ const heading1 = document.querySelector("h1");
 
 // STEP 3: Build an onclick event handler for 'btn' that invokes the displayMessage() function
 btn.onclick = function(){
-    displayMessage("this is a warning.", "warning");
+    let msgColor = displayMessage("this is a message.");
+    heading1.style.color = msgColor;
 }
 // STEP 8d: Set the h1 element to the above color returned by the displayMessage function
 
@@ -50,10 +51,12 @@ function displayMessage(msgText, msgType){
     
 
     // STEP 8: Returning data from a function
+
     // STEP 8a: Capture the background-color property of the message panel
-    
+    let msgPanelColor =window.getComputedStyle(msgPanel).getPropertyValue("background-color");
     // STEP 8b: Return the background-color to the script that invoked this function
-    
+    console.log(msgPanelColor);
+    return msgPanelColor;
     // STEP 8c: Modify the line that calls this function above (in STEP 3) such that we set a variable to be equal to the name of this function.
 
 
