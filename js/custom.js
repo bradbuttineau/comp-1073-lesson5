@@ -5,7 +5,7 @@ const heading1 = document.querySelector("h1");
 
 // STEP 3: Build an onclick event handler for 'btn' that invokes the displayMessage() function
 btn.onclick = function(){
-    let msgColor = displayMessage("this is a message.");
+    let msgColor = displayMessage("this is a message.", "warning");
     heading1.style.color = msgColor;
 }
 // STEP 8d: Set the h1 element to the above color returned by the displayMessage function
