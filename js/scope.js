@@ -1,8 +1,20 @@
 // STEP 1: Declare and initialize a global variable (x = 1)
+let x =1;
+let z = 3;
+function myFunction(){
+    console.log("x =" + x);
+    let y =2;
+    console.log("z =" + z);
+    myOtherFunction(y);
+}
 
+// STEP 2: Build a function that accepts no parameters, and also declares and intializes a variable within it (y = 2)//
+function myOtherFunction(someVar){
+   //step 3//let z = 3;//
+    console.log("y =" + someVar);
 
-// STEP 2: Build a function that accepts no parameters, and also declares and intializes a variable within it (y = 2)
-
+}
+console.log("y =" + y);
 
 // STEP 3: Build another function that also accepts no parameters, and also declares and intializes a variable within it (z = 3)
 
